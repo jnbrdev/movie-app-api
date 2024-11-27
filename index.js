@@ -27,7 +27,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 //[Database Connection]
-mongoose.connect('mongodb+srv://admin:admin123@wdc028-b461.c4soc.mongodb.net/movie-app-api?retryWrites=true&w=majority&appName=WDC028-B461');
+mongoose.connect(process.env.MONGODB_STRING);
 mongoose.connection.once('open',()=>console.log("Now connected to MongoDB Atlas"));
 
 //app.use('/b7/uploads', express.static('uploads'));
