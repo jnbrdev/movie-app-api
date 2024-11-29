@@ -6,6 +6,10 @@ const movieSchema = new mongoose.Schema({
         required: true,
         trim: true,
     },
+    imgUrl: {
+        type: String,
+        required: true
+    },
     director: {
         type: String,
         required: true,

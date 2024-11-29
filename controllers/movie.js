@@ -3,7 +3,7 @@ const Movie = require("../models/Movie");
 // Add a new movie
 module.exports.addMovie = async (req, res) => {
     try {
-        const { title, director, year, description, genre } = req.body;
+        const { title, director, year, description, genre, imgUrl } = req.body;
         const movie = new Movie({ title, director, year, description, genre });
         await movie.save();
         res.status(201).json(movie);
