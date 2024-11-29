@@ -8,7 +8,8 @@ const movieSchema = new mongoose.Schema({
     },
     imgUrl: {
         type: String,
-        required: true
+        required: true,
+        trim: true,
     },
     director: {
         type: String,
