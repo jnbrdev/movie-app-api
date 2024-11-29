@@ -20,7 +20,9 @@ const corsOptions = {
     origin: [`http://localhost:8000`, 
         'http://localhost:3000', 
         'http://zuitt-bootcamp-prod-461-7670-delavictoria.s3-website.us-east-1.amazonaws.com', 
-        'http://zuitt-bootcamp-prod-461-7836-rebuta.s3-website.us-east-1.amazonaws.com'],
+        'http://zuitt-bootcamp-prod-461-7836-rebuta.s3-website.us-east-1.amazonaws.com',
+        'https://movie-app-frontend-theta.vercel.app'    
+    ],
     credentials: true, 
     optionsSuccessStatus:200 
 };
